@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    .container-fluid.h-60
+        section#read_page
+            include read.pug
+
+        section#update_page
+           include update_contact.pug
+
+        section#create_page
+            include mailer.pug
+
+    script(src='/js/driver_code.js')

@@ -1,0 +1,56 @@
+.container
+    form#update-form.form-horizontal.col-md-8.col-sm-6.col-xs-4.offset-2.mt-4()
+            .form-radio
+                input.ml-2.mr-1(type="radio" name="prefix" value="Mr" required)
+                |Mr.
+                input.ml-3.mr-1(type="radio" name="prefix" value="Mrs")
+                |Mrs.
+                input.ml-3.mr-1(type="radio" name="prefix" value="Ms")
+                |Ms.
+                input.ml-3.mr-1(type="radio" name="prefix" value="Dr")
+                |Dr.
+
+            .form-group.my-2
+                label.mx-2(for="firstname") First Name:
+                input.form-control(id="firstname" type="text" name="firstname" required)
+                label.mx-2(for="lastname") Last Name:
+                input.form-control(id="lastname" type="text" name="lastname"  required)
+
+            .form-group.my-2
+                label.mx-2(for="street") Street:
+                input.form-control(id="street" type="text" name="street"  required)
+                label.mx-2(for="city") City:
+                input.form-control(id="city" type="text" name="city"  required)
+
+            .form-group.my-2
+                label.mx-2(for="state") State:
+                select.form-control.selState(name="state")
+                    option(value="NJ") NJ
+                    option(value="NY") NY
+                    option(value="PA") PA
+                    option(value="CT") CT
+
+            .form-group.my-2
+                label.mx-2(for="zip") ZIP:
+                input.form-control(id="zip" type="text" name="zip" required)
+
+            .form-group.my-2
+                label.mx-2(for="phone") Phone:
+                input.form-control(id="phone" type="text" name="phone")
+
+            .form-group.my-2
+                label.mx-2(for="email") E-Mail:
+                input.form-control(id="email" type="text" name="email")
+
+            .form-group.my-2.ml-2
+                |Contact by:
+                input.ml-3.mr-1(type="checkbox" name="phonechk" value="phone")
+                |Phone
+                input.ml-3.mr-1(type="checkbox" name="mailchk" value="mail")
+                |Mail
+                input.ml-3.mr-1(type="checkbox" name="emailchk" value="email")
+                |E-Mail
+                input.ml-3.mr-1(type="checkbox" name="any" value="any")
+                |Any
+            input(type="hidden" name="id")
+            button.btn.btn-primary.m-2(type="button") Submit

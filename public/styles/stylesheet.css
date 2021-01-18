@@ -1,0 +1,43 @@
+#contactmap {
+  height: 25em;
+  width: 100%;
+  border: solid black 2px;
+}
+
+#contacttable {
+  height: 22em;
+  width: 100%;
+  overflow: auto;
+}
+
+#headingS {
+  letter-spacing: 2.4px;
+}
+
+td {
+  cursor:pointer;
+}
+
+#update-form,
+#create-form,
+#formtype {
+  border: solid 2px darkgray;
+  background-color:thistle;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+#create,
+#read {
+  cursor: pointer;
+}
+
+#main-nav {
+  text-align: left;
+  background-color:thistle;
+  border-style: groove;
+}
+#loginpage{
+  background-color:thistle;
+
+}

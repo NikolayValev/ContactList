@@ -1,0 +1,21 @@
+{
+  "name": "contactlist",
+  "version": "1.0.0",
+  "description": "A persistent and secure contact list",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikolay Valev",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mapbox-gl": "^2.0.0",
+    "mongodb": "^3.6.3",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "pug": "^3.0.0"
+  }
+}
